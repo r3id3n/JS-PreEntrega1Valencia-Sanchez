@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Pre-Entrega de proyecto JS</title>
-</head>
-<body>
-    <h1>Gestion de Personal</h1>
-    <!-- Formulario del personal -->
-    <form id="userForm" action="">
-        <!-- Nombre del personal -->
-        <label for="">Nombre del personal:</label>
-        <input type="text" id="userName" required>
-        <!-- Correo del personal -->
-        <label for="">Email:</label>
-        <input type="email" id="email" required>
-        <!-- Boton de agregar -->
-        <button type="submit" id="addButton">Agregar Personal</button>
-        <!-- Boton para editar los cambios del personal -->
-        <button type="submit" id="editButton">Guardar Cambios</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Gestión de usuarios</h2>
+    <form id="userForm">
+      <label for="username">Nombre de usuario:</label>
+      <input type="text" id="username" required />
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" required />
+      <button type="submit" id="addButton">Agregar usuario</button>
+      <button type="button" id="editButton" style="display: none">
+        Guardar cambios
+      </button>
     </form>
-    <!--  -->
-    <h2>Listado de Personal</h2>
-    <ul id="userList"></ul>
-    <!-- Repositorio Javascript -->
+
+    <ul id="userList">
+      <!-- Aquí se agregarán dinámicamente los usuarios -->
+    </ul>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
