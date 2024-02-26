@@ -42,7 +42,7 @@ function renderUsers() {
       Swal.fire({
         title: "Estas seguro?",
         text: "¡No podrás revertir esto!",
-        icon: "advertencia",
+        icon: "warning",
         showCancelButton: true,
         confirmButtonColor: "#3085d6",
         cancelButtonColor: "#d33",
@@ -53,7 +53,7 @@ function renderUsers() {
           Swal.fire({
             title: "Eliminado",
             text: "El usuario ha sido eliminado.",
-            icon: "Exito",
+            icon: "success",
           });
         }
       });
